@@ -3,6 +3,14 @@
 <style>
 body {
   background-color: rgb(245, 245, 220);
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  transition: 0.3s;
+}
+
+body.dark {
+  background-color: rgb(99, 61, 34);
+  color: rgb(255,255,255);
 }
 
 .center {
@@ -65,9 +73,11 @@ body {
   clear: both;
 }
 
-#font {
-  font-family: Arial, Helvetica, sans-serif;
-}
+body.dark button {
+    background-color: rgb(99, 61, 34); /* Green */
+    color: white;              /* Text color */
+	transition 0.3s
+  }
 
 </style>
 
@@ -91,6 +101,7 @@ body {
 <div style="margin: 0 140px;"> <!-- Keeps center visible between float sides -->
 
 <h1 style="text-align: center;" id="font"{>Fuzzerson's games website</h1>
+<p style="text-align:center"><input type="checkbox" id="toggle"> Dark Mode</p>
 
 <p></p>
   
@@ -214,6 +225,13 @@ body {
 
 <!-- Clear floats at the end -->
 <div class="clear"></div>
+
+  <script>
+    const toggle = document.getElementById('toggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark', toggle.checked);
+    });
+  </script>
 
 </body>
 </html>
