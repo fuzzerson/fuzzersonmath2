@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tnaks</title>
+
+<style>
+body {
+    background-color: rgb(245,245,220);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.main {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.leftspace {
+    flex: 1;
+}
+
+
+iframe {
+    border: none;
+    width: 850px;
+    height: 450px; /* height must match .rightspace */
+}
+
+
+.rightspace {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 450px;  
+    margin-right: 50px;     
+    margin-left: 50px;     
+}
+
+
+.buttonbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.buttonbox p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.buttonbox a {
+    text-decoration: none;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Tnaks!</h1>
+
+<div class="main">
+
+    <div class="leftspace"></div>
+
+    <iframe src="tnaks.html" title="Tnaks Game"></iframe>
+
+    <div class="rightspace">
+
+        <div class="buttonbox">
+            <p>Other Games?</p>
+
+            <a href="stickrunweb.html">
+                <button>
+                    <img src="stick icon.svg" width="100" height="70">
+                    <br>Stick Run!
+                </button>
+            </a>
+
+            <a href="stocks.html">
+                <button>
+                    <img src="stock icon.webp" width="100" height="90">
+                    <br>Stock simulator
+                </button>
+            </a>
+
+            <a href="bloxorz.html">
+                <button>
+                    <img src="blockorzz.webp" width="100" height="90">
+                    <br>Blockorz
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
